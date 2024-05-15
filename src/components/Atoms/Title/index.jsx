@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import COLOR from "../../../variables/color.js";
 import React from "react";
 
 export const Title = () => {
@@ -6,5 +7,5 @@ export const Title = () => {
 };
 
 const StyledText = styled.div`
-  color: white;
+  color: ${COLOR.WHITE};
 `;
