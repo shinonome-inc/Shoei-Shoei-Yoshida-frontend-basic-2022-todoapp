@@ -27,3 +27,12 @@ const Icon = styled.img`
   width: 15px;
   height: 15px;
 `;
+const EditButton = ({ onClick }) => {
+  return (
+    <Button onClick={onClick}>
+      <Icon src={pencil} alt="Edit" />
+    </Button>
+  );
+};
+
+export default EditButton;
