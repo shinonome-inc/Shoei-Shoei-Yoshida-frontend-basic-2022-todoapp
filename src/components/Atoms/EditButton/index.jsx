@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import pencil from "../../../assets/svg/pencil.svg";
 import COLOR from "../../../variables/color.js";
+
 const Button = styled.button`
   display: flex;
   align-items: center;
@@ -23,10 +24,12 @@ const Button = styled.button`
     opacity: 0.2;
   }
 `;
+
 const Icon = styled.img`
   width: 15px;
   height: 15px;
 `;
+
 const EditButton = ({ onClick }) => {
   return (
     <Button onClick={onClick}>
