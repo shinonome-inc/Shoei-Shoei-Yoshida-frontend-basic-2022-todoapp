@@ -23,3 +23,7 @@ const Button = styled.button`
     opacity: 0.2;
   }
 `;
+const Icon = styled.img`
+  width: 15px;
+  height: 15px;
+`;
