@@ -1,4 +1,10 @@
 
+const Text = styled.p`
+  ${TEXT.S};
+  font-family: ${FONTFAMILY.NOTO_SANS};
+  color: ${COLOR.GREEN};
+`;
+
 const Icon = styled.img`
   width: 20px;
   height: 20px;
