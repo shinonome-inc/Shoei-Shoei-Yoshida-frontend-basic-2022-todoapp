@@ -1,4 +1,14 @@
 
+const AddTaskButton = ({ onClick }) => {
+  return (
+    <Button onClick={onClick}>
+      <Icon src={plus} alt="Add" />
+      <Text>タスクを追加</Text>
+    </Button>
+  );
+};
+
+export default AddTaskButton;
 const Text = styled.p`
   ${TEXT.S};
   font-family: ${FONTFAMILY.NOTO_SANS};
