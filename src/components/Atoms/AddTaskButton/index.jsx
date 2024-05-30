@@ -1,24 +1,9 @@
-
-const AddTaskButton = ({ onClick }) => {
-  return (
-    <Button onClick={onClick}>
-      <Icon src={plus} alt="Add" />
-      <Text>タスクを追加</Text>
-    </Button>
-  );
-};
-
-export default AddTaskButton;
-const Text = styled.p`
-  ${TEXT.S};
-  font-family: ${FONTFAMILY.NOTO_SANS};
-  color: ${COLOR.GREEN};
-`;
-
-const Icon = styled.img`
-  width: 20px;
-  height: 20px;
-`;
+import React from "react";
+import styled from "styled-components";
+import plus from "../../../assets/svg/plus.svg";
+import COLOR from "../../../variables/color.js";
+import FONTFAMILY from "../../../variables/font_family.js";
+import TEXT from "../../../variables/texts.js";
 
 const Button = styled.button`
   display: flex;
@@ -43,9 +28,25 @@ const Button = styled.button`
     opacity: 0.2;
   }
 `;
-import styled from "styled-components";
-import plus from "../../../assets/svg/plus.svg";
-import COLOR from "../../../variables/color.js";
-import FONTFAMILY from "../../../variables/font_family.js";
-import TEXT from "../../../variables/texts.js";
 
+const Icon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+
+const Text = styled.p`
+  ${TEXT.S};
+  font-family: ${FONTFAMILY.NOTO_SANS};
+  color: ${COLOR.GREEN};
+`;
+
+const AddTaskButton = ({ onClick }) => {
+  return (
+    <Button onClick={onClick}>
+      <Icon src={plus} alt="Add" />
+      <Text>タスクを追加</Text>
+    </Button>
+  );
+};
+
+export default AddTaskButton;
