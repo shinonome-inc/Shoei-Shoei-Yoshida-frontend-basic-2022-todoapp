@@ -1,4 +1,9 @@
 
+const Icon = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+
 const Button = styled.button`
   display: flex;
   align-items: center;
