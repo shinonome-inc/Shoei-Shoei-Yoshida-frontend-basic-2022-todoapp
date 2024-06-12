@@ -11,11 +11,19 @@ const Button = styled.button`
     border-radius: 2px;
     padding: 2px;
     cursor: pointer;
+    position: relative;
 `;
 
 const Icon = styled.img`
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    ${Button}:hover & {
+    visibility: visible;
+    }
 `;
 
 const Checkbox = ({ onClick }) => {
