@@ -21,7 +21,7 @@ const Icon = styled.img`
 const Checkbox = ({ onClick }) => {
   return (
     <Button onClick={onClick}>
-      <Icon src={check} alt="Add" />
+      <Icon src={check} alt="check icon" />
     </Button>
   );
 };
