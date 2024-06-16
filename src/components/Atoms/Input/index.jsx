@@ -1,6 +1,8 @@
-import React, {useRef, useEffect} from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import COLOR from "../../../variables/color.js";
+import FONTFAMILY from "../../../variables/font_family.js";
+import TEXT from "../../../variables/texts.js";
 
 const Input = styled.input`
     width: 100%;
@@ -8,6 +10,9 @@ const Input = styled.input`
     padding: 0px 4px;
     border-radius: 2px;
     background-color: ${COLOR.BLACK};
+    color: ${COLOR.LIGHT_GRAY};
+    font-size: ${TEXT.S};
+    font-family: ${FONTFAMILY.NOTO_SANS};
 `;
 
 const InputComponent = () => {
