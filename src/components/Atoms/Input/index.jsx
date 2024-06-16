@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import styled from "styled-components";
 import COLOR from "../../../variables/color.js";
 
@@ -10,10 +10,16 @@ const Input = styled.input`
     background-color: ${COLOR.BLACK};
 `;
 
-const InputComponent = ({ onClick }) => {
-    return (
-        <Input onClick={onClick} />
-    );
+const InputComponent = () => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
+  return <Input ref={inputRef} />;
 };
 
 export default InputComponent;
