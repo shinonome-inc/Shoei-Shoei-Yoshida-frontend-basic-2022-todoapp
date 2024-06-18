@@ -4,6 +4,6 @@ export default { component: InputComponent };
 
 export const Default = {
   args: {
-    onClick: () => console.log("clicked"),
+    onEditComplete: () => console.log("edited"),
   },
 };

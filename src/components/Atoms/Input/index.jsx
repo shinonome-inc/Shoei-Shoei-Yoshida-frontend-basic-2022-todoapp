@@ -15,7 +15,7 @@ const Input = styled.input`
     font-family: ${FONTFAMILY.NOTO_SANS};
 `;
 
-const InputComponent = () => {
+const InputComponent = ({ onEditComplete, defaultValue = "" }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -24,7 +24,24 @@ const InputComponent = () => {
     }
   }, []);
 
-  return <Input ref={inputRef} />;
+  const handleBlur = () => {
+    onEditComplete(inputRef.current.value);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      onEditComplete(inputRef.current.value);
+    }
+  };
+
+  return (
+    <Input
+      ref={inputRef}
+      defaultValue={defaultValue}
+      onBlur={handleBlur}
+      onKeyDown={handleKeyDown}
+    />
+  );
 };
 
 export default InputComponent;
