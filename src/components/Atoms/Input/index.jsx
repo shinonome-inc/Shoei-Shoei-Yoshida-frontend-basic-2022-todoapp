@@ -13,6 +13,8 @@ const Input = styled.input`
     color: ${COLOR.LIGHT_GRAY};
     font-size: ${TEXT.S};
     font-family: ${FONTFAMILY.NOTO_SANS};
+    outline: none;
+    border: none;
 `;
 
 const InputComponent = ({ onEditComplete, defaultValue = "" }) => {
