@@ -11,7 +11,7 @@ const Input = styled.input`
     border-radius: 2px;
     background-color: ${COLOR.BLACK};
     color: ${COLOR.LIGHT_GRAY};
-    font-size: ${TEXT.S};
+    ${TEXT.S};
     font-family: ${FONTFAMILY.NOTO_SANS};
     outline: none;
     border: none;
